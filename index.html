@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Join Telegram</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1151710613136945');
+fbq('track','PageView');
+</script>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f3f3f3;
+margin:0;
+text-align:center;
+}
+
+.box{
+max-width:420px;
+background:white;
+margin:auto;
+padding:25px;
+}
+
+.profile{
+width:90px;
+height:90px;
+border-radius:50%;
+}
+
+.join{
+background:#1c8adb;
+color:white;
+padding:16px;
+border-radius:10px;
+display:block;
+margin:20px auto;
+width:80%;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+.members{
+color:green;
+font-weight:bold;
+}
+
+.popup{
+position:fixed;
+bottom:20px;
+left:20px;
+background:white;
+padding:10px 15px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<img src="profile.jpg" class="profile">
+
+<h2>King Of Nifty (Dr. VIkas Laddha) 💸🏆</h2>
+
+<p>📊 Experience Trader</p>
+
+<a class="join" onclick="subscribe()" href="https://t.me/+wpY9-01-PocwMDRl">
+JOIN TELEGRAM 💬
+</a>
+
+<p class="members">🔥40,432 Members Joined</p>
+
+<p>📊 Live Daily Trades</p>
+<p>🔥 Exclusive Signals</p>
+<p>💯 High Accuracy Strategy</p>
+
+<p><b>क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं?</b></p>
+
+<p style="color:red">
+अगर हां तो दिए गए टेलीग्राम बटन पर क्लिक करें
+</p>
+
+</div>
+
+<div id="popup" class="popup">
+Rahul joined the channel
+</div>
+
+<script>
+
+function subscribe(){
+fbq('track','Subscribe');
+}
+
+var names=["Rahul","Amit","Suresh","Vikas","Ankit","Ravi"];
+
+setInterval(function(){
+
+var name = names[Math.floor(Math.random()*names.length)];
+
+document.getElementById("popup").innerHTML =
+name+" joined the channel";
+
+},10);
+
+</script>
+
+</body>
+</html>
